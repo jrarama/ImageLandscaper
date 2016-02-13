@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Processor</title>
+    <script src="StackBlur.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <form action='#' onsubmit="return false;">
+        <input type='file' id='imgfile' />
+        <input type='checkbox' id='rotate' onclick='drawIt();'/> Rotate 90
+        <input type='checkbox' id='flip'  onclick='drawIt();'/> Rotate 180
+        <input type='button' id='btnLoad' value='Load' onclick='loadImage();' />
+    </form>
+
+    <canvas id="canvas" width="1024" height="600" style="border: 1px solid #ccc"></canvas>
+</body>
+</html>
